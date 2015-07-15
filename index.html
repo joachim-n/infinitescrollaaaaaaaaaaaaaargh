@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="jquery_update/replace/jquery/1.10/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jscroll/jquery.jscroll.min.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    $( document ).ready(function() {
+      $('.masonry-scroll').jscroll({
+        debug: true,
+        autoTrigger: false,
+        loadingHtml: '<img src="loading.gif" alt="Loading image" /> Loading...',
+        nextSelector: 'a.scroll-show-more',
+        contentSelector: '.masonry-scroll .inner'
+      });
+
+    });
+  
+  </script>
+</head>
+
+<body>
+
+<div class="masonry-scroll">
+  <div class="inner">
+    <div>scroll! showing page 1</div>
+    
+    <a href="page2.html" class="scroll-show-more active">Show more</a>    
+  
+  </div>
+</div>
+
+
+</body>
+</html>
