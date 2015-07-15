@@ -4,11 +4,13 @@
   <script src="jscroll/jquery.jscroll.min.js" type="text/javascript" charset="utf-8"></script>
   <script>
     $( document ).ready(function() {
+      // The selector here is for the whole area, including the existing content.
       $('.masonry-scroll').jscroll({
         debug: true,
         autoTrigger: false,
         loadingHtml: '<img src="loading.gif" alt="Loading image" /> Loading...',
         nextSelector: 'a.scroll-show-more',
+        // THis should be the selector for the new content that gets added in.
         contentSelector: '.masonry-scroll .inner'
       });
 
